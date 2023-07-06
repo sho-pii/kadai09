@@ -1,0 +1,57 @@
+/* 編集画面CSS */
+legend{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+fieldset {
+  padding: 30px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  /* margin-top: 20px; */
+}
+
+.btn-green {
+  background-color: #20c977;
+  border: 1px solid #20c977;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+  
+.btn-red {
+  border: 1px solid #d84950;
+  color: red;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+th,
+td {
+      border:1px solid #a2aab0;
+      padding: 20px 10px;
+  }
+
+th {
+      background-color: #ebeced;
+  }
+
+td {
+  max-width: 500px;
+}
