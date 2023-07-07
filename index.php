@@ -6,7 +6,7 @@
   require_once('functions.php');
   $pdo = connectDB();
 
-  $stmt = $pdo->prepare("SELECT * FROM blog_table ORDER BY id DESC LIMIT 20 ");
+  $stmt = $pdo->prepare("SELECT * FROM blog_table ORDER BY updated_at DESC LIMIT 20 ");
   $stmt->execute();
   $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -38,16 +38,7 @@
   <main>
   <section class="ly_section">
     <div class="ly_section_inner">
-      <!-- <?php foreach($results as $result): ?>
-          <ul>
-            <li>
-              <a href="page.php?id=<?php echo $result['id']; ?>">
-              <?php echo $result['updated_at']; ?>
-              <?php echo $result['title']; ?>
-            </a>
-          </li>
-          </ul>
-      <?php endforeach; ?> -->
+
       <ul class="card_items">
         <?php foreach($results as $result): ?>
           <li>
